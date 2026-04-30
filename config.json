@@ -1,0 +1,43 @@
+{
+    "walk": {
+        "num_walks":   40,
+        "walk_length": 60,
+        "p":           1.0,
+        "q":           0.1,
+        "alpha":       0.5
+    },
+
+    "train": {
+        "train_split":  0.7,
+        "lr":           0.005,
+        "min_lr":       0.00005,
+        "max_iters":    10000,
+        "batch_size":   128,
+        "log_every":    400,
+        "eval_batches": 50,
+        "patience":     800,
+        "grad_clip":    1.0
+    },
+
+    "model": {
+        "embed_dim":  64,
+        "num_heads":  4,
+        "num_layers": 4,
+        "dropout":    0.5
+    },
+
+    "generation": {
+        "eval_graphs":     5,
+        "sequence_length": 800,
+        "num_sequences":   10,
+        "temperature":     1.2
+    },
+
+    "datasets": {
+        "ibb1":     {"num_sequences": 3},
+        "ibb2":     {"num_sequences": 3},
+        "ibb_big":  {"num_walks": 60, "walk_length": 120, "num_sequences": 15, "sequence_length": 800},
+        "pems04":   {"num_sequences": 3},
+        "citeseer": {"num_walks": 100, "walk_length": 120, "num_sequences": 15, "sequence_length": 800}
+    }
+}

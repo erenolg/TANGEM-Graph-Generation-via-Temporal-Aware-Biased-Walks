@@ -1,0 +1,16 @@
+# Experiment outputs
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# ipynb files
+*.ipynb
+
+# sh files
+*.sh
