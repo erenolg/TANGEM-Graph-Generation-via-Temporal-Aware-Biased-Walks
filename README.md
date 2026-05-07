@@ -64,23 +64,6 @@ python main.py --graph ibb1
 python main.py --graph ibb1 --eval_graphs 5
 ```
 
-### Save model and embeddings
-```bash
-python main.py --graph pems04 \
-    --save_model checkpoints/pems04.pt \
-    --save_emb   embeddings/pems04.npy
-```
-
-### Override specific hyperparameters
-```bash
-# CLI args override config.json values
-python main.py --graph citeseer --alpha 0.3 --max_iters 10000 --log_every 200
-```
-
-### Use a custom config file
-```bash
-python main.py --graph ibb1 --config my_experiment.json
-```
 
 ## Key Hyperparameters
 
@@ -105,4 +88,3 @@ python main.py --graph ibb1 --config my_experiment.json
   ```
   If missing, those two scores are skipped and reported as `nan`.
 
-- **Per-dataset overrides** in `config.json` are applied automatically when `--graph` is set. CLI args take precedence over both.
