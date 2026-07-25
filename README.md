@@ -88,3 +88,15 @@ python main.py --graph ibb1 --eval_graphs 5
   ```
   If missing, those two scores are skipped and reported as `nan`.
 
+```bibtex
+@article{tugay2026tangem,
+  title={Graph Generation via Temporal-Aware Biased Walks},
+  author={Tugay, Resul and Olug, Eren and Ak, Elif and Kaya, Kiymet and G{\"u}nd{\"u}z {O}{\u{g}}{\"u}d{\"u}c{\"u}, {\c{S}}ule},
+  journal={Transactions on Machine Learning Research},
+  year={2026},
+  url={https://openreview.net/forum?id=lDnMlhk3aw}
+}
+```
+
+
+
